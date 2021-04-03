@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>edit-menu-item</title>
+	<link type="text/css" rel="stylesheet" href="C:\Users\Swapnil Shrivastava\Desktop\COGNIZANT\truYum\WebContent\style/style.css">
+</head>
+<body>
+	<div class="mila1">
+		<font class="f1">truYum</font>
+		<img class="logo" src=images/truyum-logo-light.png alt="logo"></img>
+		<a class="link1" href="menu-item-list-admin.html">Menu</a>
+	</div>
+
+	<div class="mila2">
+		<table class="t3">
+		<font class="f2"><center><h1>Edit Menu Item</h1></center></font>
+		<form name="form" method="POST">
+			<tr>
+			<td><label for="name" class="l1">Name</label><br>
+			<input type="text" id="name" name="name"></input></td>
+			</tr><tr></tr>
+			<tr>
+				<td><label for="price" class="l1">Price(Rs.)</label><br/>
+				<input type="number" id="price" name="price"></input></td>
+				<td><label for="active" class="l1">Active</label><br/>
+				<input type="radio" id="active1" name="options" value="yes"></input><label for="active1">Yes</label>
+				<input type="radio" id="active2" name="options" value="no"></input><label for="active2">No</label></td>
+				<td><label for="date" class="l1">Date of Launch</label><br/>
+				<input type="date" id="date" name="date" required></input></td>
+				<td><label for="category" class="l1">Category</label><br/>
+			<select name="category" id="category">  
+				<option value="-1">--Select--</option>  
+				<option value="maincourse">Main Course</option>  
+				<option value="starter">Starter</option>  
+				<option value="dessert">Dessert</option>  
+				<option value="drinks">Drinks</option>    
+			</select></td>
+			</tr>
+			
+			<tr>
+				<td><label for="check" class="l1"><input type="checkbox" id="check" name="check"/>Free Delivery</label></td>
+			</tr>
+			<tr>
+				<td><a href="edit-menu-item-status.html"><input type=button value="SAVE" name="submit" class="save" onclick="validate()"/></a>
+			</tr>
+</form>
+</table>
+		<div class="foot3">
+			<p class="p1">Copyright &copy; 2021</p>
+		</div>	
+	</div>		
+<script src="C:\Users\Swapnil Shrivastava\Desktop\COGNIZANT\truYum\WebContent\js/script.js"></script>
+</body>
+</html>
